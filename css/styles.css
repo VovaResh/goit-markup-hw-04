@@ -502,6 +502,13 @@ margin-top: 17.5px;
 	height: 100%;
 
 	background-color: var(--navyblue-modal);
+
+	transition: opacity 250ms ease-out, visibility 250ms ease-out;
+
+	/* Defalt properties */
+	opacity: 1;
+	visibility: visible;
+	pointer-events: initial;
 }
 .backdrop.is-hidden {
 	opacity: 0;
@@ -523,6 +530,11 @@ margin-top: 17.5px;
     background: var(--dairy);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
+    /* Hidden state */
+.backdrop.is-hidden .model {
+	opacity: 0;
+	transform: translateX(-50%) translateY(-70%);
+}	
 .model-btn {
 	position: absolute;
 	top: 24px;
@@ -540,4 +552,5 @@ margin-top: 17.5px;
 	background-color: transparent;
 }
 .model-icon {
+	stroke: rgba(46, 47, 66, 1);
 }
