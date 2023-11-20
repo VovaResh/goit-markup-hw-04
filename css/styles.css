@@ -471,6 +471,21 @@ margin-top: 17.5px;
 	height: 100%;
 
 	width: 296px;
+	color: var(--color-cloud);
+
+      /* Body */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+	padding: 40px 32px;
+
+    background: var(--normal-txt-cl);
+	width: 360px;
+    height: 300px;
+    flex-shrink: 0;
 }
 
 .portfolio-tab { 
