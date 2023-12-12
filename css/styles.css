@@ -347,6 +347,7 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--main-txt-cl);
+margin-bottom: 8px;
 }
 .traling-list{
 	display: flex;
@@ -461,6 +462,7 @@ margin-top: 17.5px;
 }
 .portfolio-item{
 	position: relative;
+    /* overflow: hidden; */
 }
 .overlay {
 	position: absolute;
@@ -472,11 +474,9 @@ margin-top: 17.5px;
 
 	width: 296px;
 	color: var(--color-cloud);
-
+    overflow: auto; 
       /* Body */
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
@@ -486,6 +486,7 @@ margin-top: 17.5px;
 	width: 360px;
     height: 300px;
     flex-shrink: 0;
+	transform: translateY(100%);
 }
 
 .portfolio-tab { 
