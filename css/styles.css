@@ -191,6 +191,15 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 	gap: 40px;
 	}
 .header-contakt{
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.header-contakt-l:hover,
+.header-contakt-l:focus {
+    color: var(--accent-txt-cl);
+}
+
+.header-contakt-l{
 	font-style: normal;
 	font-size: 16px;
 	line-height: 1.5;
@@ -389,6 +398,7 @@ margin-bottom: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .traling-icons:hover,
 .traling-icons:focus{
@@ -476,22 +486,21 @@ margin-bottom: 8px;
 } */
 
 .portfolio-item {
-	position: relative;
+	/* position: relative; */
 }
 
 .overlay {
-	
-}
-
-.overlay:hover {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	/* position: relative; */
 }
 
 .overlay-position {
-	   
-		position: relative;
+	 	position: relative;
 		overflow: hidden;
 }
+.overlay-position:hover .overlay-p {
+	transform: translateY(0%);
+}
+
 .overlay-txt {
 		
 }
@@ -499,20 +508,31 @@ margin-bottom: 8px;
 .overlay-p {
 	position: absolute;
     top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 32px;
+
+
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--color-cloud);
-	padding: 40px 32px;
-	background-color: var(--normal-txt-cl);
-	height: 100%;
-	width: 100%;
+
+	background:var(--normal-txt-cl);
+
 	transform: translateY(100%);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-p:hover{
-	transform: translateY(0%);
+.overlay-p:hover 
+.overlay-position{
+	
 }
 
 .portfolio-tab {
